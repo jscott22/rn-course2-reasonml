@@ -1,5 +1,3 @@
-open ReasonReact;
-
 open BsReactNative;
 
 type animationState = {
@@ -36,12 +34,12 @@ let startAnimation = () =>
       [|
         Animated.Spring.animate(
           ~value=ballPosition.top,
-          ~toValue=`raw(200.),
+          ~toValue=`raw(500.),
           (),
         ),
         Animated.Spring.animate(
           ~value=ballPosition.left,
-          ~toValue=`raw(50.),
+          ~toValue=`raw(200.),
           (),
         ),
       |],
